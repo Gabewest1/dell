@@ -1,0 +1,60 @@
+.dell_logo {
+    height: 41px;
+}
+
+.header {
+    align-items: center;
+    background: #0087c7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: .7em;
+}
+
+.header i {
+    font-size: 20px;
+}
+
+.icons i {
+    margin-left: 1em;
+}
+
+i {
+    cursor: pointer;    
+}
+
+.search_container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.search {
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-left: 24px;
+    max-width: 660px;
+    width: 70%;
+}
+
+.search input {
+    border: solid thin rgba(204, 191, 191, 0.774);
+    color: rgb(204, 204, 204);
+    width: 100%;
+    padding: 7px 14px;
+}
+
+.search button {
+    background: #007db8;
+    border: none;
+    color: white;
+    padding: 4px 12px;
+    position: absolute;
+    right: 5px;
+}
+
+@media (max-width: 767px) {
+    .search_container {
+        justify-content: flex-end;
+    }
+}
