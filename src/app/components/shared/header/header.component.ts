@@ -1,18 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { BreakpointsService } from "../../../services/breakpoints.service"
+import { Responsive } from "../Responsive" 
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
-  isMobile: boolean
+export class HeaderComponent extends Responsive implements OnInit {
 
-  constructor(public breakpoints: BreakpointsService) { }
+  constructor() { super() }
 
   ngOnInit() {
-    console.log("BREAKPOINTS:", this.breakpoints)
-    this.isMobile = this.breakpoints.isMobile
   }
 }

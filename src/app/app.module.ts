@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 
-import { BreakpointsService } from "./services/breakpoints.service";
 import { NavbarComponent } from './components/shared/navbar/navbar.component'
 
 @NgModule({
@@ -16,9 +15,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component'
   imports: [
     BrowserModule
   ],
-  providers: [
-    BreakpointsService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

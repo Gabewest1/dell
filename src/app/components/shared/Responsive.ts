@@ -1,7 +1,4 @@
-import { Injectable } from '@angular/core';
-
-@Injectable()
-export class BreakpointsService {
+export class Responsive {
   isMobile: boolean
 
   constructor() {
