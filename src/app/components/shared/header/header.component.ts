@@ -14,13 +14,5 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     console.log("BREAKPOINTS:", this.breakpoints)
     this.isMobile = this.breakpoints.isMobile
-    
-    window.addEventListener("resize", this.handleResize.bind(this))
   }
-
-  handleResize() {
-    console.log("RESIZING:", this.breakpoints.isMobile)
-    this.isMobile = this.breakpoints.isMobile
-  }
-
 }
