@@ -9,13 +9,15 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component'
 
 import { SideBarService } from "./services/side-bar.service";
 import { CarouselComponent } from './components/carousel/carousel.component'
+import { FooterComponent } from './components/shared/footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule

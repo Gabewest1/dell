@@ -1,0 +1,26 @@
+.footer {
+    list-style: none;
+    margin: 0;
+}
+
+.footer .item {
+    border-bottom: solid thin;
+    color: inherit;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.footer.top {
+    background: rgba(185, 181, 155, .49);
+    color: black;    
+}
+
+.footer.bottom {
+    background: #007db8;    
+    color: white;    
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
