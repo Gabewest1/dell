@@ -9,6 +9,7 @@ export class CarouselComponent implements OnInit {
   activeSlide: number
   numSlides: number
   slideOut: number
+  autoTransition: object
 
   constructor() { }
 
@@ -17,7 +18,15 @@ export class CarouselComponent implements OnInit {
     this.numSlides = 4
     this.slideOut = -1
 
-    setInterval(() => this.increaseSlide(), 2000)
+    this.startAutoSlideTransition()
+  }
+
+  startAutoSlideTransition() {
+    this.autoTransition = setInterval(() => this.increaseSlide(), 2000)    
+  }
+
+  stopAutoSlideTransition() {
+    clearInterval(this.autoTransition)    
   }
 
   increaseSlide() {
@@ -34,7 +43,16 @@ export class CarouselComponent implements OnInit {
   }
 
   setSlide(slide) {
-    this.slideOut = this.activeSlide    
-    this.activeSlide = slide
+    this.stopAutoSlideTransition()
+
+    if (this.activeSlide === slide) {
+      this.slideOut = -1
+    }
+    if (this.activeSlide !== slide) {
+      this.slideOut = this.activeSlide    
+      this.activeSlide = slide
+    }
+
+    this.startAutoSlideTransition()
   }
 }
