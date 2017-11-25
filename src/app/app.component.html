@@ -1,4 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
-<app-navbar></app-navbar>
+<div class="app">
+    <div class="main">
+        <app-header></app-header>
+        <app-navbar *ngIf="!isMobile"></app-navbar>        
+    </div>
+    <div *ngIf="isMobile" class="slide-in-menu">
+        <app-navbar></app-navbar>
+
+    </div>
+    
+</div>
 

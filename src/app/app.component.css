@@ -1,0 +1,23 @@
+.app {
+
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main .active {
+    transform: translateX(-82px);
+}
+
+.slide-in-menu {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    transform: translateX(82px);
+    width: 82px;
+}
+
+.slide-in-menu .active {
+    transform: translateX(0%);
+}
