@@ -1,6 +1,7 @@
 .footer {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .footer .item {
@@ -13,6 +14,10 @@
 .footer.top {
     background: rgba(185, 181, 155, .49);
     color: black;    
+}
+
+.footer.top .item {
+    border-bottom-color: #00000061;    
 }
 
 .footer.bottom {
