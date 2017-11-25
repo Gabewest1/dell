@@ -11,3 +11,9 @@
     padding: 10px 15px;
     list-style: none;
 }
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
