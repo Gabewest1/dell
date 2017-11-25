@@ -2,7 +2,8 @@
 <div [ngClass]="{ 'app': true, 'active': isSideBarShowing }">
     <div [ngClass]="{ 'main': true, 'active': isSideBarShowing }">
         <app-header></app-header>
-        <app-navbar *ngIf="!isMobile"></app-navbar>        
+        <app-navbar *ngIf="!isMobile"></app-navbar>
+        <app-carousel></app-carousel>
     </div>
     <div *ngIf="isMobile" [ngClass]="{ 'slide-in-menu': true, 'active': isSideBarShowing }">
         <app-navbar></app-navbar>
