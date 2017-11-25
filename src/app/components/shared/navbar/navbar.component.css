@@ -1,19 +1,31 @@
 .navbar {
     border-top: solid thin rgb(1, 108, 158);
-    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 3px rgba(0,0,0,.2);
     display: flex;
     align-items: center;
     background: #007db8;
-    color: white;
 }
 
 .navbar li {
-    padding: 10px 15px;
+    color: white;
     list-style: none;
+    padding: 10px 15px;
 }
 
 @media (max-width: 767px) {
     .navbar {
+        background: rgba(185, 181, 155, .49);
+        height: 100%;        
         flex-direction: column;
+    }
+
+    .navbar li {
+        border-bottom: solid thin #00000061;
+        box-sizing: border-box;
+        color: #007db8;    
+        list-style: none;
+        padding: 10px 15px;
+        width: 100%;
+        font-size: 14px;
     }
 }
