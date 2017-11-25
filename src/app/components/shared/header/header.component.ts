@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Responsive } from "../Responsive" 
+import { SideBarService } from "../../../services/side-bar.service"
 
 @Component({
   selector: 'app-header',
@@ -8,8 +9,13 @@ import { Responsive } from "../Responsive"
 })
 export class HeaderComponent extends Responsive implements OnInit {
 
-  constructor() { super() }
+  constructor(private sideBar: SideBarService) { super() }
 
   ngOnInit() {
+  }
+
+  toggleSideBar() {
+    console.log("TOGGLING THE SIDEBAR")
+    this.sideBar.toggleSideBar()
   }
 }
