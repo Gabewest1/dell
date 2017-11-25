@@ -1,18 +1,23 @@
 .app {
+    transform: translateX(0%);    
+    transition: transform .2s ease-in;
+    height: 100%;
+}
 
+.app.active {
+    transform: translateX(-200px);    
 }
 
 .main {
     flex-grow: 1;
-    transition: transform .2s ease-in;    
+    height: 100%;
 }
 
 .main.active {
-    transform: translateX(-200px);
+    box-shadow: 1px 0px 4px 1px;
 }
 
 .slide-in-menu {
-    background: rgb(183, 183, 183);
     position: absolute;
     height: 100%;
     right: 0;
@@ -20,8 +25,4 @@
     transform: translateX(200px);
     width: 200px;
     transition: transform .2s ease-in;
-}
-
-.slide-in-menu.active {
-    transform: translateX(0%);
 }
