@@ -2,12 +2,15 @@
     border-top: solid thin rgb(1, 108, 158);
     box-shadow: 0 1px 2px 3px rgba(0,0,0,.2);
     background: #007db8;
+    padding-left: 1em;
+    margin: 0;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     width: 960px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
