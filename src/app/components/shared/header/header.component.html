@@ -1,18 +1,22 @@
 <header class="header">
-  <img src="assets/images/dell_logo.png" alt="dell logo" class="dell_logo">
-  <div class="search_container">
+  <div class="wrapper">
 
-    <div *ngIf="!isMobile" class="search">
-      <button>search</button>
-      <input type="text" name="search" placeholder="What can we help you find?">
+    <img src="assets/images/dell_logo.png" alt="dell logo" class="dell_logo">
+    <div class="search_container">
+      
+      <div *ngIf="!isMobile" class="search">
+        <button>search</button>
+        <input type="text" name="search" placeholder="What can we help you find?">
+      </div>
+      
+      <i *ngIf="isMobile" class="fa fa-search" aria-hidden="true"></i>    
     </div>
-
-    <i *ngIf="isMobile" class="fa fa-search" aria-hidden="true"></i>    
-  </div>
-  <div class="icons">
-    <i class="fa fa-user" aria-hidden="true"></i>
-    <span *ngIf="!isMobile">Sign In</span>
+    <div class="icons">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      <span *ngIf="!isMobile">Sign In</span>
+      
+      <i *ngIf="isMobile" class="fa fa-bars" aria-hidden="true" (click)="toggleSideBar()"></i>  
+    </div>
     
-    <i *ngIf="isMobile" class="fa fa-bars" aria-hidden="true" (click)="toggleSideBar()"></i>  
   </div>
 </header>

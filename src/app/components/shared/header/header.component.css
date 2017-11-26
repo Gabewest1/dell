@@ -1,13 +1,18 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    width: 960px;
+    margin: 0 auto;
+}
+
 .dell_logo {
     height: 41px;
 }
 
 .header {
-    align-items: center;
     background: #0087c7;
     color: white;
-    display: flex;
-    justify-content: space-between;
     padding: .7em;
 }
 

@@ -1,9 +1,14 @@
 .navbar {
     border-top: solid thin rgb(1, 108, 158);
     box-shadow: 0 1px 2px 3px rgba(0,0,0,.2);
+    background: #007db8;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
-    background: #007db8;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .navbar li {
