@@ -22,7 +22,7 @@ export class CarouselComponent implements OnInit {
   }
 
   startAutoSlideTransition() {
-    this.autoTransition = setInterval(() => this.increaseSlide(), 2000)    
+    this.autoTransition = setInterval(() => this.increaseSlide(), 5000)    
   }
 
   stopAutoSlideTransition() {
