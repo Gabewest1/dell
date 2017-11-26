@@ -1,3 +1,4 @@
+
 .footer {
     list-style: none;
     margin: 0;
@@ -9,15 +10,18 @@
     color: inherit;
     padding: 10px 0;
     text-decoration: none;
+    text-align: center;
+    flex: 0 0 0;
+    white-space: nowrap;
 }
 
 .footer.top {
     background: rgba(185, 181, 155, .49);
-    color: black;    
+    color: rgb(68, 68, 68);    
 }
 
 .footer.top .item {
-    border-bottom-color: #00000061;    
+    border-bottom-color: rgb(68, 68, 68);    
 }
 
 .footer.bottom {
@@ -28,4 +32,21 @@
 .item a {
     text-decoration: none;
     color: inherit;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .footer.bottom {
+        font-size: 8px;
+    }
+
+    .footer .item {
+        border: none;        
+    }
 }
