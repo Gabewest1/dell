@@ -9,7 +9,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component'
 
 import { SideBarService } from "./services/side-bar.service";
 import { CarouselComponent } from './components/shared/carousel/carousel.component'
-import { FooterComponent } from './components/shared/footer/footer.component'
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { HomeComponent } from './components/home/home.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/shared/footer/footer.component'
     HeaderComponent,
     NavbarComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule
