@@ -6,6 +6,11 @@
     height: 300px;    
 }
 .slide {
+    background: url(https://i.dell.com/sites/imagecontent/app-merchandizing/responsive/HomePage/en/PublishingImages/24914-home-xps-desktop-8920-laptop-inspiron-15-5567-2800x944.jpg);
+    background-color: #efefef;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
     position: absolute;
     display: flex;
     flex-direction: column;
