@@ -9,7 +9,7 @@ export class CarouselComponent implements OnInit {
   activeSlide: number
   numSlides: number
   slideOut: number
-  autoTransition: object
+  autoTransition: number
 
   constructor() { }
 
