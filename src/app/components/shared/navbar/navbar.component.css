@@ -2,7 +2,6 @@
     border-top: solid thin rgb(1, 108, 158);
     box-shadow: 0 1px 2px 3px rgba(0,0,0,.2);
     background: #007db8;
-    padding-left: 1em;
     margin: 0;
 }
 
@@ -24,7 +23,11 @@
     .navbar {
         background: rgba(185, 181, 155, .49);
         height: 100%;        
+    }
+    
+    .wrapper {
         flex-direction: column;
+        width: 100%;
     }
 
     .navbar li {
