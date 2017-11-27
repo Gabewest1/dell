@@ -10,7 +10,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component'
 import { SideBarService } from "./services/side-bar.service";
 import { CarouselComponent } from './components/shared/carousel/carousel.component'
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { HomeComponent } from './components/home/home.component'
+import { HomeComponent } from './components/home/home.component';
+import { ResponsiveContainerComponent } from './components/shared/responsive-container/responsive-container.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeComponent } from './components/home/home.component'
     NavbarComponent,
     CarouselComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ResponsiveContainerComponent
   ],
   imports: [
     BrowserModule
