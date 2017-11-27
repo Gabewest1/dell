@@ -8,9 +8,6 @@
 .wrapper {
     display: flex;
     align-items: center;
-    width: 960px;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 .navbar li {
@@ -38,5 +35,11 @@
         padding: 10px 15px;
         width: 100%;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        display: none;
     }
 }
