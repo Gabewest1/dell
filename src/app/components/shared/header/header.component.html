@@ -15,9 +15,9 @@
       </div>
       <div class="icons">
         <i class="fa fa-user" aria-hidden="true"></i>
-        <span *ngIf="!isMobile">Sign In</span>
+        <span *ngIf="isDesktop">Sign In</span>
         
-        <i *ngIf="isMobile" class="fa fa-bars" aria-hidden="true" (click)="toggleSideBar()"></i>  
+        <i *ngIf="isMobile || isTablet" class="fa fa-bars" aria-hidden="true" (click)="toggleSideBar()"></i>  
       </div>
       
     </div>
