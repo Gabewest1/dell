@@ -1,17 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div [ngClass]="{ 'app': true, 'active': isSideBarShowing }">
-    <div [ngClass]="{ 'main': true, 'active': isSideBarShowing }">
-        <app-header></app-header>
-        <app-navbar *ngIf="isDesktop || isLargeDesktop"></app-navbar>
-
-        <app-home></app-home>
-
-        <app-footer></app-footer>
-    </div>
-    <div *ngIf="isMobile || isTablet" [ngClass]="{ 'slide-in-menu': true, 'active': isSideBarShowing }">
-        <app-navbar></app-navbar>
-
-    </div>
+    <div [ngClass]="{ 'container': true, 'active': isSideBarShowing }">
+        
+        
+        <div [ngClass]="{ 'main': true, 'active': isSideBarShowing }">
+            <app-header></app-header>
+            <app-navbar *ngIf="isDesktop || isLargeDesktop"></app-navbar>
     
+            <app-home></app-home>
+    
+            <app-footer></app-footer>
+        </div>
+        
+        
+        <div *ngIf="isMobile || isTablet" [ngClass]="{ 'slide-in-menu': true, 'active': isSideBarShowing }">
+            <app-navbar></app-navbar>
+        </div>
+
+
+
+    </div>
 </div>
 

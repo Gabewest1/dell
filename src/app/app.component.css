@@ -1,10 +1,15 @@
 .app {
-    transform: translateX(0%);    
-    transition: transform .2s ease-in;
     height: 100%;
+    overflow-x: hidden;
+    width: 100%;    
 }
 
-.app.active {
+.container {
+    transform: translateX(0%); 
+    transition: transform .2s ease-in;
+}
+
+.container.active {
     transform: translateX(-200px);
 }
 
