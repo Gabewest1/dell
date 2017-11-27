@@ -69,7 +69,6 @@ img {
     display: flex;
     position: relative;
     justify-content: space-between;
-    /* margin: 20px -10px; */
 }
 .row1 .item {
     flex-basis: 50%;
@@ -123,6 +122,12 @@ img {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .row2 .item {
+        flex: 0 0 47%;
+    }
+}
+
 @media (max-width: 767px) {
     
     .products {
@@ -140,5 +145,12 @@ img {
     
     .row2 {
         flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) {
+    .row2 {
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
