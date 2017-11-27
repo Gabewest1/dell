@@ -7,6 +7,7 @@ img {
 }
 
 .main-content {
+    box-sizing: border-box;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
@@ -30,16 +31,17 @@ img {
     margin: 0;
 }
 
-.product a {
+.product a, .item a {
     color: rgb(0, 125, 184);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
 }
 
 .title {
     font-weight: 400;
     text-align: center;
+    margin: 0;
 }
 
 .accessories {
@@ -50,7 +52,7 @@ img {
     margin-bottom: 1em;
 }
 
-.accessory button {
+.cta-btn {
     background-color: #007db8;
     border: none;
     outline: none;
@@ -59,16 +61,70 @@ img {
     padding: 10px 7px;
 }
 
+.green {
+    background-color: #408001;
+}
+
+.row {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* margin: 20px -10px; */
+}
+.row1 .item {
+    flex-basis: 50%;
+}
+.row2 .content a {
+    font-size: 14px
+}
+.item {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+    justify-content: flex-end;
+    margin: 20px 10px;
+    min-height: 245px;
+    position: relative;
+}
+
+.item .content {
+    background-color: #fffffff4;
+    
+}
+
 @media (max-width: 1170px) {
     .main-content {
-        max-width: 970px;
+        max-width: 968px;
+    }
+    
+    .row2 {
+        flex-wrap: wrap;
+    }
+    .row2 .item {
+        flex-basis: 50%;
+        /* margin: 10px 0; */
+    }
+
+    .item {
+        /* margin: 10px 0; */
+    }
+}
+
+@media (max-width: 967px) {
+    .main-content {
+        max-width: 767px;
+    }
+    .row1 {
+        flex-direction: column;
     }
 }
 
 @media (max-width: 767px) {
-    .main-content {
-        max-width: 767px;
-    }
+    
     .products {
         flex-wrap: wrap;
     }
@@ -79,6 +135,10 @@ img {
     }
 
     .accessories {
+        flex-direction: column;
+    }
+    
+    .row2 {
         flex-direction: column;
     }
 }
