@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from "rxjs/BehaviorSubject" 
+import { BehaviorSubject } from "rxjs/BehaviorSubject"
 
 @Injectable()
 export class SideBarService {
@@ -7,7 +7,14 @@ export class SideBarService {
   isSideBarShowing = this.messageSource.asObservable()
   data = false
 
-  constructor() { }
+  constructor() { 
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 991) {
+        this.messageSource.next(false)
+        this.data = false
+      }
+    })
+  }
 
   toggleSideBar() {
     console.log(this.isSideBarShowing, this.data)
