@@ -1,10 +1,81 @@
 <nav class="navbar">
   <app-responsive-container>
     <div class="wrapper">
-      <li>Products <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
-      <li>Solutions &amp; Services <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
-      <li>Support <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
-      <li>Deals <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
+      
+      <li class="list-item">
+        <a href="#">Products</a><i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <ul class="sublist start-below-navbar">
+          <li><a href="#">Laptops</a></li>
+          <li><a href="#">Desktops &amp; All-in-One PCs</a></li>
+          <li><a href="#">Tablets &amp; 2-in-1 Laptops</a></li>
+          <li><a href="#">Gaming</a></li>
+          <li><a href="#">Workstations</a></li>
+          <li><a href="#">Thin Clients</a></li>
+          <li><a href="#">Servers &amp; Storeage</a></li>
+          <li><a href="#">Networking</a></li>
+          <li><a href="#">Monitors</a></li>
+          <li><a href="#">Printers &amp; Ink</a></li>
+          <li><a href="#">Software</a></li>
+          <li><a href="#">Electronics &amp; Acessories</a></li>
+          <li><a href="#">Gateways &amp; Embedded PCs</a></li>
+        </ul>
+      </li>
+
+      <li class="list-item">
+        <a href="#">Solutions &amp; Services</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <ul class="sublist start-below-navbar">
+          <li><a href="#">View All Solutions &amp; Services</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Big Data</a></li>
+          <li><a href="#">Cloud</a></li>
+          <li><a href="#">Data Center</a></li>
+          <li><a href="#">Desktop Virtualization</a></li>
+          <li><a href="#">Internet of Things</a></li>
+          <li><a href="#">Mobile</a></li>
+          <li><a href="#">PC as a Service (PCaaS)</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Training &amp; Certification</a></li>
+          <li><a href="#">Dell EMC Solutions</a></li>
+        </ul>
+      </li>
+      
+      <li class="list-item">
+        <a href="#">Support</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <ul class="sublist start-below-navbar">
+          <li><a href="#">View All Support</a></li>
+          <li><a href="#">Diagnostics</a></li>
+          <li><a href="#">Drivers &amp; Downloads</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Manuals</a></li>
+          <li><a href="#">Support Library</a></li>
+          <li><a href="#">Order Support</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Retail Registration</a></li>
+          <li><a href="#">Ownership Transfer</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        
+      </li>
+      
+      <li class="list-item">
+        <a href="#">Deals</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <ul class="sublist start-below-navbar">
+          <li><a href="#">Laptop Deals</a></li>  
+          <li><a href="#">Desktop Deals</a></li>
+          <li><a href="#">Workstation Deals</a></li>
+          <li><a href="#">Server Deals</a></li>
+          <li><a href="#">Electronics &amp; Accessories Deals</a></li>
+          <li><a href="#">Monitor Deals</a></li>
+          <li><a href="#">TV Deals</a></li>
+          <li><a href="#">Dell Outlet</a></li>
+          <li><a href="#">Dell Advantage Rewards</a></li>
+          <li><a href="#">Employee, Student, Military Discounts</a></li>
+          <li><a href="#">Financing</a></li>
+          <li><a href="#">Coupons</a></li>
+        </ul>        
+      </li>
+
     </div>
   </app-responsive-container>
 </nav>
