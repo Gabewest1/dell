@@ -1,3 +1,9 @@
+a {
+    color: inherit;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
 .navbar {
     border-top: solid thin rgb(1, 108, 158);
     box-shadow: 0 1px 2px 3px rgba(0,0,0,.2);
@@ -5,16 +11,56 @@
     margin: 0;
 }
 
+.list-item {
+    align-self: start;
+    color: white;
+    height: 35px;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item:hover {
+    color: #007db8;
+    background-color: white;
+}
+
+.list-item:hover .sublist {
+    display: flex;
+    flex-direction: column;
+}
+
+.sublist {
+    background-color: white;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;  /* Need the z-index to position above the carousel */
+}
+
+.sublist li {
+    padding: 10px 0;
+    color: #007db8;
+}
+
+.sublist li:hover {
+    background-color: #cce7f3
+}
+
+.start-below-navbar {
+    transform: translateY(35px);
+}
+
 .wrapper {
     display: flex;
     align-items: center;
 }
 
-.navbar li {
-    color: white;
-    list-style: none;
-    padding: 10px 15px;
-}
 
 @media (max-width: 991px) {
     .navbar {
