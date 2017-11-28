@@ -1,10 +1,10 @@
 <nav class="navbar">
   <app-responsive-container>
     <div class="wrapper">
-      <li>Products</li>
-      <li>Solutions &amp; Services</li>
-      <li>Support</li>
-      <li>Deals</li>
+      <li>Products <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
+      <li>Solutions &amp; Services <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
+      <li>Support <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
+      <li>Deals <i *ngIf="isMobile || isTablet" class="fa fa-caret-down pull-right" aria-hidden="true"></i></li>
     </div>
   </app-responsive-container>
 </nav>
