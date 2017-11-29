@@ -19,7 +19,7 @@
 }
 
 .main.active {
-    box-shadow: 1px 0px 4px 1px;
+    box-shadow: 5px 0px 6px 1px darkgrey;
 }
 
 .slide-in-menu {
@@ -30,4 +30,5 @@
     transform: translateX(267px);
     width: 267px;
     transition: transform .2s ease-in;
+    z-index: -1;
 }
