@@ -7,10 +7,21 @@ import { Responsive } from "../Responsive"
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent extends Responsive implements OnInit {
+  activeListItem: number
+
   constructor() { super() }
 
   ngOnInit() {
-    console.log("isMobile:", this.isMobile)
+    this.activeListItem = -1
   }
 
+  setActiveListItem(listItem) {
+    let clickedAlreadyActiveListItem = listItem === this.activeListItem
+
+    if (clickedAlreadyActiveListItem) {
+      this.activeListItem = -1
+    } else {
+      this.activeListItem = listItem
+    }
+  }
 }
