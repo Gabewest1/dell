@@ -5,10 +5,19 @@
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 1 }" (click)="setActiveListItem(1)">
         <div class="list-item__title">
           <a href="#">Products</a>
-          <i *ngIf="isMobile || isTablet" [ngClass]="{ 'fa': true, 'fa-caret-down': activeListItem !== 1, 'fa-caret-up': activeListItem === 1 }" aria-hidden="true"></i>
+          <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1)" aria-hidden="true"></i>
         </div>
         <ul class="sublist start-below-navbar">
-          <li><a href="#">Laptops</a></li>
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 1}" (click)="setActiveSublistItem($event, 1)">
+            <div class="list-item__title">
+                <a href="#">Laptops</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 1)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border"><a href="#">For Home</a></li>
+              <li class="left-blue-border"><a href="#">For Work</a></li>
+            </ul>
+          </li>
           <li><a href="#">Desktops &amp; All-in-One PCs</a></li>
           <li><a href="#">Tablets &amp; 2-in-1 Laptops</a></li>
           <li><a href="#">Gaming</a></li>
