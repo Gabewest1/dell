@@ -3,7 +3,9 @@
     <div class="wrapper">
       
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 1 }" (click)="setActiveListItem(1)">
-        <a href="#">Products</a><i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <div class="list-item__title">
+          <a href="#">Products</a><i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
         <ul class="sublist start-below-navbar">
           <li><a href="#">Laptops</a></li>
           <li><a href="#">Desktops &amp; All-in-One PCs</a></li>
@@ -22,7 +24,9 @@
       </li>
 
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 2 }" (click)="setActiveListItem(2)">
-        <a href="#">Solutions &amp; Services</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <div class="list-item__title">
+          <a href="#">Solutions &amp; Services</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
         <ul class="sublist start-below-navbar">
           <li><a href="#">View All Solutions &amp; Services</a></li>
           <li><a href="#">Industries</a></li>
@@ -41,7 +45,9 @@
       </li>
       
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 3 }" (click)="setActiveListItem(3)">
-        <a href="#">Support</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <div class="list-item__title">
+          <a href="#">Support</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
         <ul class="sublist start-below-navbar">
           <li><a href="#">View All Support</a></li>
           <li><a href="#">Diagnostics</a></li>
@@ -59,7 +65,9 @@
       </li>
       
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 4 }" (click)="setActiveListItem(4)">
-        <a href="#">Deals</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        <div class="list-item__title">
+          <a href="#">Deals</a> <i *ngIf="isMobile || isTablet" class="fa fa-caret-down" aria-hidden="true"></i>
+        </div>
         <ul class="sublist start-below-navbar">
           <li><a href="#">Laptop Deals</a></li>  
           <li><a href="#">Desktop Deals</a></li>
