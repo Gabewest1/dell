@@ -85,7 +85,7 @@ a {
         position: relative;
         transform: translateY(0);
         width: 98%;
-        left: 2px;
+        left: 2%;
     }
     .navbar {
         background: rgb(238, 238, 238);
