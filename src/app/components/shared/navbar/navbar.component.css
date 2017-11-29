@@ -78,11 +78,14 @@ a {
 
 @media (max-width: 991px) {
     .list-item.active .sublist {
-        border-top: solid thin #00000061; 
+        border-top: solid thin #00000061;
+        border-radius: 4px;
         display: flex;
         flex-direction: column;
         position: relative;
         transform: translateY(0);
+        width: 98%;
+        left: 2px;
     }
     .navbar {
         background: rgba(185, 181, 155, .49);
