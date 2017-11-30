@@ -73,10 +73,10 @@
     <div class="row row1">
 
       <div class="item" style="background-image: url('http://i.dell.com/sites/imagecontent/app-merchandizing/responsive/HomePage/en/PublishingImages/precision-canvas-2718-720x245.jpg');">
-        <div class="content" style="width: 48%; top: 10px; right: 10px; position: absolute;">
+        <div class="content" id="float">
           <h2 class="title"><a href="#">Break creative boundaries.</a></h2>
           <p class="details"><a href="#">Meet Dell Canvas, a 27&quot; workspace that empowers natural digital creation.</a></p>
-          <button class="cta-btn green">Start Creating</button>
+          <button *ngIf="isTablet || isDesktop || isLargeDesktop" class="cta-btn green">Start Creating</button>
         </div>
       </div>
 

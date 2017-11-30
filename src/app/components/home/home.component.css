@@ -107,6 +107,7 @@ img {
 
 .row1 .item {
     flex-basis: 50%;
+    min-height: 230px;
 }
 
 .item {
@@ -118,7 +119,7 @@ img {
     flex-shrink: 1;
     flex-basis: 25%;
     justify-content: flex-end;
-    margin: 20px 10px;
+    margin: 20px 0px;
     min-height: 192px;
     position: relative;
 }
@@ -137,13 +138,11 @@ img {
         flex-wrap: wrap;
     }
     .row2 .item {
-        flex-basis: 50%;
+        flex-basis: 47%;
         /* margin: 10px 0; */
     }
 
-    .item {
-        /* margin: 10px 0; */
-    }
+    
 }
 
 @media (max-width: 991px) {
@@ -189,5 +188,18 @@ img {
     .row2 {
         flex-direction: row;
         flex-wrap: nowrap;
+    }
+
+    .item {
+        margin: 10px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    #float {
+        position: absolute;
+        right: 10px; 
+        top: 10px; 
+        width: 48%; 
     }
 }
