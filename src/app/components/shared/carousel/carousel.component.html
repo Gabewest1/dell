@@ -35,14 +35,14 @@
   </div>
 
   <ul class="pagination">
-    <li [ngClass]="{ 'item': true, 'active': activeSlide === 0 }">
-      <a (click)="setSlide(0)" href="#">1</a>
+    <li [ngClass]="{ 'item': true, 'active': activeSlide === 0 }" (click)="setSlide(0)">
+      <a href="#">1</a>
     </li>
-    <li [ngClass]="{ 'item': true, 'active': activeSlide === 1 }">
-      <a (click)="setSlide(1)" href="#">2</a>
+    <li [ngClass]="{ 'item': true, 'active': activeSlide === 1 }" (click)="setSlide(1)">
+      <a href="#">2</a>
     </li>
-    <li [ngClass]="{ 'item': true, 'active': activeSlide === 2 }">
-      <a (click)="setSlide(2)" href="#">3</a>
+    <li [ngClass]="{ 'item': true, 'active': activeSlide === 2 }" (click)="setSlide(2)">
+      <a href="#">3</a>
     </li>
   </ul>
   

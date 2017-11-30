@@ -74,6 +74,7 @@
     border: solid thin rgba(198, 198, 198, 0.64);
     box-sizing: border-box;
     color: #0087c7;
+    cursor: pointer;
     display: flex;
     flex-grow: 1;
     height: 35px;
