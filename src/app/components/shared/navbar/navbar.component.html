@@ -2,37 +2,125 @@
   <app-responsive-container>
     <div class="wrapper">
       
+      <!-- Prdoucts -->
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 1 }" (click)="setActiveListItem(1)">
+        
         <div class="list-item__title">
           <a href="#">Products</a>
           <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1)" aria-hidden="true"></i>
         </div>
+
         <ul class="sublist start-below-navbar">
+          
           <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 1}" (click)="setActiveSublistItem($event, 1)">
             <div class="list-item__title">
                 <a href="#">Laptops</a>
                 <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 1)" aria-hidden="true"></i>    
             </div>
             <ul class="sublist__sublist">
-              <li class="left-blue-border"><a href="#">For Home</a></li>
-              <li class="left-blue-border"><a href="#">For Work</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
             </ul>
           </li>
-          <li><a href="#">Desktops &amp; All-in-One PCs</a></li>
-          <li><a href="#">Tablets &amp; 2-in-1 Laptops</a></li>
-          <li><a href="#">Gaming</a></li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 2}" (click)="setActiveSublistItem($event, 2)">
+            <div class="list-item__title">
+                <a href="#">Desktops &amp; All-in-One PCs</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 2)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 3}" (click)="setActiveSublistItem($event, 3)">
+            <div class="list-item__title">
+                <a href="#">Tablets &amp; 2-in-1 Laptops</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 3)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 4}" (click)="setActiveSublistItem($event, 4)">
+            <div class="list-item__title">
+                <a href="#">Gaming</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 4)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">Alienware PCs</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Dell Gaming</a></li>
+            </ul>
+          </li>
+          
           <li><a href="#">Workstations</a></li>
           <li><a href="#">Thin Clients</a></li>
           <li><a href="#">Servers &amp; Storeage</a></li>
-          <li><a href="#">Networking</a></li>
-          <li><a href="#">Monitors</a></li>
-          <li><a href="#">Printers &amp; Ink</a></li>
-          <li><a href="#">Software</a></li>
-          <li><a href="#">Electronics &amp; Acessories</a></li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 5}" (click)="setActiveSublistItem($event, 5)">
+            <div class="list-item__title">
+                <a href="#">Networking</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 5)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+          
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 6}" (click)="setActiveSublistItem($event, 6)">
+            <div class="list-item__title">
+                <a href="#">Monitors</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 6)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 7}" (click)="setActiveSublistItem($event, 7)">
+            <div class="list-item__title">
+                <a href="#">Printers &amp; Ink</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 7)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 8}" (click)="setActiveSublistItem($event, 8)">
+            <div class="list-item__title">
+                <a href="#">Software</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 8)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 9}" (click)="setActiveSublistItem($event, 9)">
+            <div class="list-item__title">
+                <a href="#">Electronics &amp; Acessories</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(1, 9)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
           <li><a href="#">Gateways &amp; Embedded PCs</a></li>
+
         </ul>
       </li>
 
+      <!-- Solutions & support -->
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 2 }" (click)="setActiveListItem(2)">
         <div class="list-item__title">
           <a href="#">Solutions &amp; Services</a> 
@@ -40,8 +128,45 @@
         </div>
         <ul class="sublist start-below-navbar">
           <li><a href="#">View All Solutions &amp; Services</a></li>
-          <li><a href="#">Industries</a></li>
-          <li><a href="#">Services</a></li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 2}" (click)="setActiveSublistItem($event, 2)">
+            <div class="list-item__title">
+                <a href="#">Industries</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(2, 2)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">Education</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Energy</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Federal Government</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Financial Services</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Healthcare</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Manufacturing</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Original Equipment Manufacturers</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Retail</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">State &amp; Local Government</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Telecommunications, Media &amp; Entertainment</a></li>
+            </ul>
+          </li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 3}" (click)="setActiveSublistItem($event, 3)">
+            <div class="list-item__title">
+                <a href="#">Services</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(2, 3)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">View All Services</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">IT Consulting</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Deployment Services</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Support Services For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Support Services For Business</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Asset Resa;e &amp; Recycling</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Financing &amp; Leasing</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Retail</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Application Services</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Managed Services</a></li>
+            </ul>
+          </li>
+
           <li><a href="#">Big Data</a></li>
           <li><a href="#">Cloud</a></li>
           <li><a href="#">Data Center</a></li>
@@ -51,10 +176,23 @@
           <li><a href="#">PC as a Service (PCaaS)</a></li>
           <li><a href="#">Security</a></li>
           <li><a href="#">Training &amp; Certification</a></li>
-          <li><a href="#">Dell EMC Solutions</a></li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 4}" (click)="setActiveSublistItem($event, 4)">
+            <div class="list-item__title">
+                <a href="#">Dell EMC Solutions</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(2, 4)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">View All Dell EMC Solutions</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">All-Flash</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">Converged Infrastructure</a></li>
+            </ul>
+          </li>
+
         </ul>
       </li>
       
+      <!-- Support -->
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 3 }" (click)="setActiveListItem(3)">
         <div class="list-item__title">
           <a href="#">Support</a> 
@@ -76,24 +214,119 @@
         
       </li>
       
+      <!-- Deals -->
       <li [ngClass]="{ 'list-item': true, 'active': activeListItem === 4 }" (click)="setActiveListItem(4)">
         <div class="list-item__title">
           <a href="#">Deals</a> 
           <i *ngIf="isMobile || isTablet" [ngClass]="{ 'fa': true, 'fa-caret-down': activeListItem !== 4, 'fa-caret-up': activeListItem === 4 }" aria-hidden="true"></i>
         </div>
+
+
         <ul class="sublist start-below-navbar">
-          <li><a href="#">Laptop Deals</a></li>  
-          <li><a href="#">Desktop Deals</a></li>
-          <li><a href="#">Workstation Deals</a></li>
-          <li><a href="#">Server Deals</a></li>
-          <li><a href="#">Electronics &amp; Accessories Deals</a></li>
-          <li><a href="#">Monitor Deals</a></li>
-          <li><a href="#">TV Deals</a></li>
-          <li><a href="#">Dell Outlet</a></li>
-          <li><a href="#">Dell Advantage Rewards</a></li>
+
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 1}" (click)="setActiveSublistItem($event, 1)">
+            <div class="list-item__title">
+                <a href="#">Laptop Deals</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 1)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+          
+          <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 2}" (click)="setActiveSublistItem($event, 2)">
+            <div class="list-item__title">
+                <a href="#">Desktop Deals</a>
+                <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 2)" aria-hidden="true"></i>    
+            </div>
+            <ul class="sublist__sublist">
+              <li class="left-blue-border sublist__item"><a href="#">For Home</a></li>
+              <li class="left-blue-border sublist__item"><a href="#">For Work</a></li>
+            </ul>
+          </li>
+
+        <li><a href="#">Workstation Deals</a></li>
+        <li><a href="#">Server Deals</a></li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 3 }" (click)="setActiveSublistItem($event, 3)">
+          <div class="list-item__title">
+            <a href="#">Electronics &amp; Accessories Deals</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 3)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 4 }" (click)="setActiveSublistItem($event, 4)">
+          <div class="list-item__title">
+            <a href="#">Monitor Deals</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 4)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 5 }" (click)="setActiveSublistItem($event, 5)">
+          <div class="list-item__title">
+            <a href="#">TV Deals</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 5)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 6 }" (click)="setActiveSublistItem($event, 6)">
+          <div class="list-item__title">
+            <a href="#">Dell Outlet</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 6)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 7 }" (click)="setActiveSublistItem($event, 7)">
+          <div class="list-item__title">
+            <a href="#">Dell Advantage Rewards</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 7)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
           <li><a href="#">Employee, Student, Military Discounts</a></li>
-          <li><a href="#">Financing</a></li>
-          <li><a href="#">Coupons</a></li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 8 }" (click)="setActiveSublistItem($event, 8)">
+          <div class="list-item__title">
+            <a href="#">Financing</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 8)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
+          
+        <li [ngClass]="{ 'sublist__item': true, 'active': activeSublistItem === 9 }" (click)="setActiveSublistItem($event, 9)">
+          <div class="list-item__title">
+            <a href="#">Coupons</a>
+            <i *ngIf="isMobile || isTablet" [ngClass]="getIconStyles(4, 9)" aria-hidden="true"></i>
+          </div>
+          <ul class="sublist__sublist">
+            <li class="left-blue-border sublist__item"><a href="">For Home</a></li>
+            <li class="left-blue-border sublist__item"><a href="">For Work</a></li>
+          </ul>
+        </li>
         </ul>        
       </li>
 
