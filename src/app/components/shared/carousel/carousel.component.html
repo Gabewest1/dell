@@ -1,41 +1,37 @@
 <div class="carousel">
   <div class="slides">
 
-    <div [ngClass]="{ 'slide': true, 'slide0': true, 'active': activeSlide === 0, 'slide-out': slideOut ===  0}">
-      <div class="content">
-        <h2 class="title">Sitewide savings.</h2>
-        <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
-        <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
-        <button>Show Now</button>
+      <div [ngClass]="{ 'slide': true, 'slide0': true, 'active': activeSlide === 0, 'slide-out': slideOut ===  0}">
+        <img class="hero-image" src="https://i.dell.com/sites/imagecontent/app-merchandizing/responsive/HomePage/en/PublishingImages/24914-home-xps-desktop-8920-laptop-inspiron-15-5567-2800x944.jpg" alt="">
+        <div class="content">
+          <h2 class="title">Sitewide savings.</h2>
+          <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
+          <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
+          <button>Show Now</button>
+        </div>
+      </div>  
+   
+      <div [ngClass]="{ 'slide': true, 'slide1': true, 'active': activeSlide === 1, 'slide-out': slideOut ===  1}">
+        <img class="hero-image" src="https://i.dell.com/sites/imagecontent/app-merchandizing/responsive/HomePage/en/PublishingImages/24914-home-xps-desktop-8920-laptop-inspiron-15-5567-2800x944.jpg" alt="">
+        <div class="content">
+          <h2 class="title">Sitewide savings.</h2>
+          <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
+          <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
+          <button>Show Now</button>
+        </div>
       </div>
-    </div>
-  
-    <div [ngClass]="{ 'slide': true, 'slide1': true, 'active': activeSlide === 1, 'slide-out': slideOut ===  1}">
-      <div class="content">
-        <h2 class="title">Sitewide savings.</h2>
-        <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
-        <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
-        <button>Show Now</button>
+   
+   
+      <div [ngClass]="{ 'slide': true, 'slide2': true, 'active': activeSlide === 2, 'slide-out': slideOut ===  2}">
+        <img class="hero-image" src="https://i.dell.com/sites/imagecontent/app-merchandizing/responsive/HomePage/en/PublishingImages/24914-home-xps-desktop-8920-laptop-inspiron-15-5567-2800x944.jpg" alt="">
+        <div class="content">
+          <h2 class="title">Sitewide savings.</h2>
+          <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
+          <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
+          <button>Show Now</button>
+        </div>
       </div>
-    </div>
-  
-    <div [ngClass]="{ 'slide': true, 'slide2': true, 'active': activeSlide === 2, 'slide-out': slideOut ===  2}">
-      <div class="content">
-        <h2 class="title">Sitewide savings.</h2>
-        <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
-        <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
-        <button>Show Now</button>
-      </div>
-    </div>
-  
-    <div [ngClass]="{ 'slide': true, 'slide3': true, 'active': activeSlide === 3, 'slide-out': slideOut ===  3}">
-      <div class="content">
-        <h2 class="title">Sitewide savings.</h2>
-        <p class="details">Save an additional 15% on PCs sitewide with coupon code. Members get free expedited delivery*.</p>
-        <p class="minor-details">With free Dell Advantage Rewards membership. Visit Dell.com/Rewards to join.</p>
-        <button>Show Now</button>
-      </div>
-    </div>
+   
   </div>
 
   <ul class="pagination">
@@ -48,8 +44,7 @@
     <li [ngClass]="{ 'item': true, 'active': activeSlide === 2 }">
       <a (click)="setSlide(2)" href="#">3</a>
     </li>
-    <li [ngClass]="{ 'item': true, 'active': activeSlide === 3 }">
-      <a (click)="setSlide(3)" href="#">4</a>
-    </li>
   </ul>
+  
+  <div style="clear: both"></div>
 </div>

@@ -15,7 +15,7 @@ export class CarouselComponent implements OnInit {
 
   ngOnInit() {
     this.activeSlide = 0
-    this.numSlides = 4
+    this.numSlides = 3
     this.slideOut = -1
 
     this.startAutoSlideTransition()

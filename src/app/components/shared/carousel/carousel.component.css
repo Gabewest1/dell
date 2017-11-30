@@ -33,7 +33,7 @@
     position: relative;
     display: flex;
     height: 100%;
-    width: 400%;
+    width: 300%;
 }
 
 .slide {
@@ -42,7 +42,7 @@
     justify-content: flex-end;
     float: left;
     position: relative;
-    width: 25%;
+    width: 33.33%;
     height: 100%;
     opacity: 0;
     transition: transform .5s ease-in-out;
@@ -107,10 +107,9 @@ a {
     }
 }
 
-.slide0 { left: -25%; }
-.slide1 { left: -50%; }
-.slide2 { left: -75%; }
-.slide3 { left: -100%; }
+.slide0 { left: -33.33%; }
+.slide1 { left: -66.66%; }
+.slide2 { left: -99.99%; }
 
 .slide.active, .slide.slide-out { opacity: 1; }
 
