@@ -35,13 +35,16 @@
 
   <ul class="pagination">
     <li [ngClass]="{ 'item': true, 'active': activeSlide === 0 }" (click)="setSlide(0)">
-      <a href="#">1</a>
+      <a *ngIf="isMobile || isTablet" href="#">1</a>
+      <a *ngIf="isDesktop || isLargeDesktop" href="#">Cyber Week sale.</a>
     </li>
     <li [ngClass]="{ 'item': true, 'active': activeSlide === 1 }" (click)="setSlide(1)">
-      <a href="#">2</a>
+      <a *ngIf="isMobile || isTablet" href="#">2</a>
+      <a *ngIf="isDesktop || isLargeDesktop" href="#">Cyber Week for business.</a>
     </li>
     <li [ngClass]="{ 'item': true, 'active': activeSlide === 2 }" (click)="setSlide(2)">
-      <a href="#">3</a>
+      <a *ngIf="isMobile || isTablet" href="#">3</a>
+      <a *ngIf="isDesktop || isLargeDesktop" href="#">Premium Support Plus.</a>
     </li>
   </ul>
   

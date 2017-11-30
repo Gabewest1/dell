@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { Responsive } from "../Responsive"
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css']
 })
-export class CarouselComponent implements OnInit {
+export class CarouselComponent extends Responsive implements OnInit {
   activeSlide: number
   numSlides: number
   slideOut: number
   autoTransition: number
 
-  constructor() { }
+  constructor() { super() }
 
   ngOnInit() {
     this.activeSlide = 0
