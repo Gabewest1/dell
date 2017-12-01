@@ -5,7 +5,7 @@
     
       <img src="assets/images/dell_logo.png" alt="dell logo" class="dell_logo">
 
-      <div class="search_container">
+      <div class="search-container">
         
         <div *ngIf="!isMobile" class="search">
           <button>search</button>
@@ -32,7 +32,11 @@
   </app-responsive-container>
 </header>
 
-<div *ngIf="isMobile" [ngClass]="{ 'mobile-search-bar': true, 'active': isMobileSearchBarActive }">
-    <input type="text" name="search" placeholder="What can we help you find?">
-    <i *ngIf="isMobile" class="fa fa-search" aria-hidden="true"></i>
+<div class="blue-bg">
+  <div *ngIf="isMobile" [ngClass]="{ 'mobile-search-bar': true, 'active': isMobileSearchBarActive }">
+    <div class="search-container">
+      <i *ngIf="isMobile" class="fa fa-search" aria-hidden="true"></i>
+      <input type="text" name="search" placeholder="What can we help you find?">
+    </div>
+  </div>
 </div>
