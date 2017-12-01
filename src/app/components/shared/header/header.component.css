@@ -59,6 +59,15 @@ i {
     right: 5px;
 }
 
+.mobile-search-bar {
+    display: none;
+    width: 100%;
+}
+
+.mobile-search-bar.active {
+    display: block;
+}
+
 @media (max-width: 767px) {
     .search_container {
         justify-content: flex-end;
