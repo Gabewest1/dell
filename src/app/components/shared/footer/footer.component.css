@@ -9,7 +9,6 @@
     color: inherit;
     padding: 10px;
     text-decoration: none;
-    text-align: center;
     flex: 0 0 0;
     white-space: nowrap;
 }
@@ -45,6 +44,7 @@
     }
 
     .footer .item {
-        border: none;        
+        border: none;
+        text-align: left;
     }
 }
