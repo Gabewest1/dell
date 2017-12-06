@@ -10,7 +10,7 @@
 }
 
 .header {
-    background: #0087c7;
+    background: rgb(0, 125, 184);    
     color: white;
     display: flex;
     align-items: center;
@@ -48,16 +48,18 @@ i {
     border: solid thin rgba(204, 191, 191, 0.774);
     color: rgb(204, 204, 204);
     width: 100%;
-    padding: 7px 14px;
+    padding: 4px;
 }
 
 .search button {
-    background: #007db8;
+    background: rgb(0, 125, 184);
     border: none;
     color: white;
+    font-family: inherit;
+    font-size: 14px;
     padding: 4px 12px;
     position: absolute;
-    right: 5px;
+    right: 2px;
 }
 
 .mobile-search-bar {
